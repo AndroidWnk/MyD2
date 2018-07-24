@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    　　
+    <string-array name="checkText">
+        　　
+        <item>电池组温度</item>
+        　　
+        <item>电池组电压</item>
+        　　
+        <item>电池组电流</item>
+        　　
+        <item>电机温度</item>
+
+        <item>电机电压</item>
+
+        <item>电机监控</item>
+
+    </string-array>
+</resources>

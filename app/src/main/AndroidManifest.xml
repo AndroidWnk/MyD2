@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.etrans.myd2">
+
+    <!-- 连接互联网Internet权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- GPS定位权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="permission.WRITE_SECURE_SETTINGS" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/check_car"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:persistent="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="mcc|mnc|orientation|keyboardHidden|screenSize|keyboardHidden|navigation|screenLayout|fontScale|uiMode|smallestScreenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ZDievActivity"
+            android:configChanges="mcc|mnc|orientation|keyboardHidden|screenSize|keyboardHidden|navigation|screenLayout|fontScale|uiMode|smallestScreenSize"
+
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme" />
+        <!--android:label="@string/zdiev_name"-->
+
+        <activity
+            android:name=".activity.CarInformationActivity"
+            android:configChanges="mcc|mnc|orientation|keyboardHidden|screenSize|keyboardHidden|navigation|screenLayout|fontScale|uiMode|smallestScreenSize"
+
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme" />
+        <!--android:label="@string/zdiev_car_information"-->
+
+        <activity
+            android:name=".activity.AnalysisDrivingActivity"
+            android:configChanges="mcc|mnc|orientation|keyboardHidden|screenSize|keyboardHidden|navigation|screenLayout|fontScale|uiMode|smallestScreenSize"
+
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme" />
+        <!--android:label="@string/zdiev_analysis_driving"-->
+        <activity
+            android:name=".activity.CarDiagnosisActivity"
+            android:configChanges="mcc|mnc|orientation|keyboardHidden|screenSize|keyboardHidden|navigation|screenLayout|fontScale|uiMode|smallestScreenSize"
+
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme" />
+        <!--android:label="@string/zdiev_car_diagnosis"-->
+
+        <activity
+            android:name=".activity.DiagnosisResultActivity"
+            android:configChanges="mcc|mnc|orientation|keyboardHidden|screenSize|keyboardHidden|navigation|screenLayout|fontScale|uiMode|smallestScreenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme" />
+        <!--android:label="@string/zdiev_car_diagnosis"-->
+
+        <activity
+            android:name=".activity.MaintenanceActivity"
+            android:configChanges="mcc|mnc|orientation|keyboardHidden|screenSize|keyboardHidden|navigation|screenLayout|fontScale|uiMode|smallestScreenSize"
+
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme" />
+        <!--android:label="@string/main_maintenannce"-->
+
+
+        <provider android:name=".service.CANContentProvider" android:authorities="com.etrans.myd2.can"
+            android:exported="true"
+            />
+        <service
+            android:name=".service.MyD2Service"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter >
+                <action android:name="com.etrans.myd2.service.MyD2Service" />
+            </intent-filter>
+        </service>
+        <receiver android:name=".service.MyD2Receiver">
+            <intent-filter >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

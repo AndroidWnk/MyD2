@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_bg_d2s">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/car_information_layout"
+                android:layout_width="match_parent"
+                android:layout_height="87px"
+                android:background="@drawable/setting_itembg_selector">
+
+                <ImageView
+                    android:id="@+id/img_car_information"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:background="@drawable/home_icon1" />
+
+                <TextView
+                    android:id="@+id/text_car_information"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="52px"
+                    android:layout_toRightOf="@id/img_car_information"
+                    android:text="@string/zdiev_car_information"
+                    android:textColor="@color/white"
+                    android:textSize="28px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="80dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/item_right_disable" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/changtiao" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/car_diagnosis_layout"
+                android:layout_width="match_parent"
+                android:layout_height="87px"
+                android:background="@drawable/setting_itembg_selector">
+
+                <ImageView
+                    android:id="@+id/img_car_diagnosis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="34px"
+                    android:src="@drawable/home_icon2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="60px"
+                    android:layout_toRightOf="@id/img_car_diagnosis"
+                    android:text="@string/zdiev_car_diagnosis"
+                    android:textColor="@color/white"
+                    android:textSize="28px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="80dp"
+                    android:src="@drawable/item_right_disable" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/changtiao" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/analysis_driving_layout"
+                android:layout_width="match_parent"
+                android:layout_height="87px"
+                android:background="@drawable/setting_itembg_selector">
+
+                <ImageView
+                    android:id="@+id/img_analysis_driving"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="34px"
+                    android:src="@drawable/home_icon3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="60px"
+                    android:layout_toRightOf="@id/img_analysis_driving"
+                    android:text="@string/zdiev_analysis_driving"
+                    android:textColor="@color/white"
+                    android:textSize="28px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="80dp"
+                    android:src="@drawable/item_right_disable" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/changtiao" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

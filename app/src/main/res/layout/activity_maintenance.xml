@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_bg_d2s">
+
+        <RelativeLayout
+            android:id="@+id/rl_noneed_maintences"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/check_car"
+            android:visibility="gone">
+
+
+        </RelativeLayout>
+
+<!--
+        <RelativeLayout
+            android:id="@+id/rl_MaintenanceShowDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="111111111111111111"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+        </RelativeLayout>
+-->
+
+        <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/ll_maintence_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70px">
+
+                <RelativeLayout
+                    android:id="@+id/rl_maintence_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <TextView
+                        android:id="@+id/text_maintenannce_top1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60px"
+                        android:text="@string/maintenannce_next_mileage"
+                        android:textColor="@color/white"
+                        android:textSize="32px" />
+
+                    <TextView
+                        android:id="@+id/text_kilo_top"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/text_maintenannce_top1"
+                        android:text="——km"
+                        android:textColor="@color/roundpg_text"
+                        android:textSize="32px" />
+
+                    <TextView
+                        android:id="@+id/text_after"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/text_kilo_top"
+                        android:text="@string/maintenannce_after"
+                        android:textColor="@color/white"
+                        android:textSize="32px" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/changtiao" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="135px">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="34px"
+                        android:text="@string/maintenannce_interval"
+                        android:textColor="@color/white"
+                        android:textSize="28px" />
+
+                    <Button
+                        android:id="@+id/btn_jian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/maintenance_jian_selector"
+                        android:gravity="center" />
+
+                    <Button
+                        android:id="@+id/btn_zhong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/maintenance_btn_zhong"
+                        android:gravity="center"
+                        android:text="---km"
+                        android:textColor="@color/white"
+                        android:textSize="28px" />
+
+                    <Button
+                        android:id="@+id/btn_jia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/maintenance_jia_selector"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25px"
+                        android:layout_marginRight="5dp"
+                        android:text="@string/maintenannce_last_mileage"
+                        android:textColor="@color/white"
+                        android:textSize="28px" />
+
+                    <EditText
+                        android:id="@+id/edit_maintenance_preKilo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/maintenance_btn_selector"
+                        android:gravity="center"
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:text="-1km"
+                        android:textColor="@color/white"
+                        android:textSize="28px" />
+
+                    <TextView
+                        android:id="@+id/btn_maintenannce_reset_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/maintenance_btn_selector"
+                        android:gravity="center"
+                        android:text="@string/maintenannce_reset_distance"
+                        android:textColor="@color/white"
+                        android:textSize="28px" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/maintenannce_advice"
+                    android:textColor="@color/btn_color_on"
+                    android:textSize="18px" />
+
+                <!--<ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/changtiao" />-->
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_suggest"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60px"
+                    android:background="@drawable/setting_itembg_on">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="44px"
+                        android:text="@string/maintenannce_check_recommend"
+                        android:textColor="@color/white"
+                        android:textSize="28px" />
+
+                    <!--<ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/changtiao" />-->
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70px">
+
+                    <ImageView
+                        android:id="@+id/img_maintenannce_check_power"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="44px"
+                        android:background="@drawable/maintenance_icon1" />
+
+                    <TextView
+                        android:id="@+id/text_maintenannce_check_power2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30px"
+                        android:layout_toRightOf="@id/img_maintenannce_check_power"
+                        android:text="@string/maintenannce_check_power"
+                        android:textColor="@color/white"
+                        android:textSize="28px" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/changtiao" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70px">
+
+                    <ImageView
+                        android:id="@+id/img_maintenannce_check_air_condition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="44px"
+                        android:src="@drawable/maintenance_icon2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30px"
+                        android:layout_toRightOf="@id/img_maintenannce_check_air_condition"
+                        android:text="@string/maintenannce_check_air_condition"
+                        android:textColor="@color/white"
+                        android:textSize="28px" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/changtiao" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70px">
+
+                    <ImageView
+                        android:id="@+id/img_brake_and_fluid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="44px"
+                        android:src="@drawable/maintenance_icon3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30px"
+                        android:layout_toRightOf="@id/img_brake_and_fluid"
+                        android:text="@string/maintenannce_check_brake_and_fluid"
+                        android:textColor="@color/white"
+                        android:textSize="28px" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/changtiao" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70px">
+
+                    <ImageView
+                        android:id="@+id/img_tire"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="44px"
+                        android:src="@drawable/maintenance_icon4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30px"
+                        android:layout_toRightOf="@id/img_tire"
+                        android:text="@string/maintenannce_check_tire"
+                        android:textColor="@color/white"
+                        android:textSize="28px" />
+
+                    <!--<ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/changtiao" />-->
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+       <!-- <LinearLayout
+            android:id="@+id/ll_no_need_maintence"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:text="@string/maintenannce_no_need"
+                android:textSize="32sp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="150dp"
+                android:id="@+id/textView2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/check_car"
+                android:id="@+id/imageView2" />
+
+
+        </LinearLayout>-->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_noneed_maintence"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:text="@string/maintenannce_no_need"
+                android:textSize="32sp"
+                android:textColor="@color/head_bg_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                />
+
+            <RelativeLayout
+                android:id="@+id/ll_noneed_suggest"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/check_car"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_need_maintence"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:text="@string/maintenannce_need"
+                android:textSize="32sp"
+                android:textColor="@color/head_bg_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                 />
+
+            <LinearLayout
+                android:id="@+id/ll_need_suggest"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60px"
+                    android:background="@drawable/setting_itembg_on">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="44px"
+                        android:text="@string/maintenannce_check_recommend"
+                        android:textColor="@color/white"
+                        android:textSize="28px" />
+
+                    <!--<ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/changtiao" />-->
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70px">
+
+                    <ImageView
+                        android:id="@+id/img_maintenannce_check_power2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="44px"
+                        android:background="@drawable/maintenance_icon1" />
+
+                    <TextView
+                        android:id="@+id/text_maintenannce_check_power3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30px"
+                        android:layout_toRightOf="@id/img_maintenannce_check_power2"
+                        android:text="@string/maintenannce_check_power"
+                        android:textColor="@color/white"
+                        android:textSize="28px" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/changtiao" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70px">
+
+                    <ImageView
+                        android:id="@+id/img_maintenannce_check_air_condition2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="44px"
+                        android:src="@drawable/maintenance_icon2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30px"
+                        android:layout_toRightOf="@id/img_maintenannce_check_air_condition2"
+                        android:text="@string/maintenannce_check_air_condition"
+                        android:textColor="@color/white"
+                        android:textSize="28px" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/changtiao" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70px">
+
+                    <ImageView
+                        android:id="@+id/img_brake_and_fluid2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="44px"
+                        android:src="@drawable/maintenance_icon3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30px"
+                        android:layout_toRightOf="@id/img_brake_and_fluid2"
+                        android:text="@string/maintenannce_check_brake_and_fluid"
+                        android:textColor="@color/white"
+                        android:textSize="28px" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/changtiao" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70px">
+
+                    <ImageView
+                        android:id="@+id/img_tire2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="44px"
+                        android:src="@drawable/maintenance_icon4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30px"
+                        android:layout_toRightOf="@id/img_tire2"
+                        android:text="@string/maintenannce_check_tire"
+                        android:textColor="@color/white"
+                        android:textSize="28px" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/changtiao" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--<ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/check_car" />
+-->
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

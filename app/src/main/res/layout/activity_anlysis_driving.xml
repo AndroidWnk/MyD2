@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_d2s"
+    android:orientation="vertical">
+
+
+        <TextView
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/analysis_driving_habit"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+    <!--    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/habit_title"
+            android:text="@string/analysis_driving_habit"
+            android:layout_margin="10dp"
+            android:layout_gravity="left"
+            />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/habit_circle"
+            android:id="@+id/imageView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/tv_fenge"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"
+            />
+
+        <TextView
+            android:layout_below="@+id/tv_fenge"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/composite_scores"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:layout_centerInParent="true"
+            android:id="@+id/textView" />
+
+
+        <TextView
+            android:id="@+id/tv_mark"
+            android:layout_above="@+id/tv_fenge"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/full_score"
+            android:textColor="@color/lenechat_green"
+            android:textSize="28sp"
+            android:layout_centerInParent="true"
+             />
+
+        <TextView
+            android:id="@+id/tv_shuxian"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_speed_down"
+            android:layout_marginLeft="200dp"
+            android:layout_marginBottom="190dp"
+            android:layout_toRightOf="@+id/tv_shuxian"
+            android:layout_above="@+id/tv_fenge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/speed_down"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            />
+        <TextView
+            android:id="@+id/tv_speed_down_sum"
+            android:layout_marginLeft="200dp"
+            android:layout_marginBottom="150dp"
+            android:layout_toRightOf="@+id/tv_shuxian"
+            android:layout_above="@+id/tv_fenge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="--次"
+            android:textColor="@color/gray_e"
+            android:textSize="22sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_speed_up"
+            android:layout_marginRight="220dp"
+            android:layout_marginBottom="190dp"
+            android:layout_toLeftOf="@+id/tv_shuxian"
+            android:layout_above="@+id/tv_fenge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/speed_up"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            />
+        <TextView
+            android:id="@+id/tv_speed_up_sum"
+            android:layout_marginRight="220dp"
+            android:layout_marginBottom="150dp"
+            android:layout_toLeftOf="@+id/tv_shuxian"
+            android:layout_above="@+id/tv_fenge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="--次"
+            android:textColor="@color/gray_e"
+            android:textSize="22sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_speed_snail"
+            android:layout_marginRight="280dp"
+            android:layout_marginTop="140dp"
+            android:layout_toLeftOf="@+id/tv_shuxian"
+            android:layout_below="@+id/tv_fenge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/speed_snail"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            />
+        <TextView
+            android:id="@+id/tv_speed_snail_sum"
+            android:layout_marginRight="280dp"
+            android:layout_marginTop="100dp"
+            android:layout_toLeftOf="@+id/tv_shuxian"
+            android:layout_below="@+id/tv_fenge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="--分钟"
+            android:textColor="@color/gray_e"
+            android:textSize="22sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_speed_speed_carfree"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="100dp"
+            android:layout_toRightOf="@+id/tv_shuxian"
+            android:layout_below="@+id/tv_fenge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/speed_carfree"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            />
+        <TextView
+            android:id="@+id/tv_speed_carfree_sum"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="60dp"
+            android:layout_toRightOf="@+id/tv_shuxian"
+            android:layout_below="@+id/tv_fenge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="--分钟"
+            android:textColor="@color/gray_e"
+            android:textSize="22sp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="filter_app_names">
+        <item>com.xdy.douban</item>
+        <item>com.xdy.doufen</item>
+        <item>com.iflytek.autofly</item>
+        <item>com.linkgent.remote.server</item>
+        <item>com.linkgent.xxvehiclesmartblock</item>
+        <item>com.mxnavi.mxnavi</item>
+        <item>net.easyconn</item>
+        <item>com.txznet.webchat</item>
+        <item>com.txznet.music</item>
+        <item>com.etrans.jt.bluetooth</item>
+        <item>com.oupeng.mini.android</item>
+        <item>com.baidu.carlifevehicle</item>
+    </string-array>
+
+    <integer-array name="lock_time">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+    </integer-array>
+</resources>

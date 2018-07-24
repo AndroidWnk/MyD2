@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">我的D2</string>
+    <string name="main_fileexplorer">文件管理</string>
+    <string name="main_maintenannce">保养信息</string>
+    <string name="main_user_manual">用户手册</string>
+
+
+    <!--知豆iev-->
+    <string name="zdiev_name">知豆iev</string>
+    <string name="zdiev_car_information">车辆信息</string>
+    <string name="zdiev_car_diagnosis">车辆诊断</string>
+    <string name="zdiev_analysis_driving">驾驶分析</string>
+
+    <!--车辆信息-->
+    <!--实时-->
+    <string name="cur">实时</string>
+    <string name="cur_soc">剩余电量</string>
+    <string name="cur_battery_temperature">电池组温度</string>
+    <string name="cur_battery_voltage">电池组电压</string>
+    <string name="cur_battery_current">电池组电流</string>
+    <string name="cur_motor_temperature">电机温度</string>
+    <string name="cur_motor_voltage">电机电压</string>
+    <string name="cur_motor_monitor">电机监控</string>
+
+    <!--今日-->
+    <string name="today">今天</string>
+    <string name="today_driving_kilo">行车里程</string>
+    <string name="today_hundred_kilo_consume">百公里电耗</string>
+    <string name="today_charge_soc">充电电量</string>
+    <string name="today_average_speed">平均车速</string>
+    <string name="today_driving_time">行车时间</string>
+    <string name="today_charge_time">充电时间</string>
+
+    <!--近一周-->
+    <string name="week">近一周</string>
+    <string name="week_charge_number">充电次数</string>
+    <string name="week_charge_number_sum">本周共充电</string>
+    <string name="times">次</string>
+    <string name="week_charge_times">本周累计充电</string>
+    <string name="hours">小时</string>
+    <string name="week_driving_kilo">本周累计行驶里程</string>
+    <string name="kilometer">km</string>
+    <string name="week_driving_time">行驶时长</string>
+    <string name="week_driving_time_sum">本周累计行驶</string>
+    <string name="week_hundred_kilo_consume">百公里耗电</string>
+    <string name="week_hundred_kilo_consume_sum">本周百公里耗电</string>
+    <string name="kw_h_sum">kw.h</string>
+    <string name="week_average_speed">本周平均车速</string>
+    <string name="km_h_avrage">km/h</string>
+
+
+
+    <!--驾驶分析-->
+
+    <string name="analysis_driving_habit">驾驶习惯分析</string>
+    <string name="speed_up">加速过猛</string>
+    <string name="speed_down">减速过猛</string>
+    <string name="speed_carfree">畅快驾驶</string>
+    <string name="speed_snail">龟速驾驶</string>
+    <string name="composite_scores">综合得分</string>
+    <string name="score">分</string>
+    <string name="full_score">100分</string>
+
+
+    <!--诊断结果-->
+    <string name="diagnosis_car_instruction">诊断说明：\n\t\t用于帮助您能了解爱车的健康状况，结果仅供参考。</string>
+    <string name="diagnosis_car">诊断一下</string>
+    <string name="diagnosing_car">正在诊断...</string>
+    <string name="diagnosing_result1">电池组温度</string>
+    <string name="diagnosing_result2">电池组电压</string>
+    <string name="diagnosing_result3">电池组电流</string>
+    <string name="diagnosing_result4">电机温度</string>
+    <string name="diagnosing_result5">电机电压</string>
+    <string name="diagnosing_result6">电机监控</string>
+    <string name="diagnosing_result_normal">正常</string>
+    <string name="diagnosing_result_fault">故障</string>
+
+    <!--保养信息-->
+
+    <string name="maintenannce_advice">建议首次保养里程为3000km,第二次保养里程为7000km,之后每5000km保养一次</string>
+    <string name="maintenannce_next_mileage">下次保养在</string>
+    <string name="maintenannce_after">后</string>
+    <string name="maintenannce_interval">保养间隔</string>
+    <string name="maintenannce_last_mileage">上次保养里程</string>
+    <string name="maintenannce_reset_distance">复位距离</string>
+    <string name="maintenannce_check_recommend">建议保养项目:</string>
+    <string name="maintenannce_check_power">动力电源系统检查</string>
+    <string name="maintenannce_check_air_condition">空调系统功能检查</string>
+    <string name="maintenannce_check_brake_and_fluid">制动器和制动液检查</string>
+    <string name="maintenannce_check_tire">轮胎检查</string>
+    <string name="maintenannce_need">您的爱车已达到保养里程，请进行保养！</string>
+    <string name="maintenannce_no_need">您的爱车无需保养</string>
+
+
+
+</resources>
